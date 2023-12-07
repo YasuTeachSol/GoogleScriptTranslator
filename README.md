@@ -1,30 +1,32 @@
+User
 # GoogleScriptTranslator Android Library
 
 This Android library allows you to easily integrate Google Apps Script for text translation in your Android applications. It uses OkHttp for making HTTP requests and provides a convenient interface for handling translation callbacks.
 
 ## Usage
-# GoogleScriptTranslator Android Library
-
-The GoogleScriptTranslator Android library allows seamless integration of Google Apps Script for text translation in Android applications. It employs OkHttp for making HTTP requests and provides a convenient interface for handling translation callbacks.
-
-## Installation
-
-### Step 1: Add JitPack Repository
-
-Add the following code in your root `build.gradle` at the end of repositories:
-
-```gradle
-dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-    repositories {
-        mavenCentral()
-        maven { url 'https://jitpack.io' }
-    }
-}
 
 1. **Setup:**
    - Include the `GoogleScriptTranslator` class in your Android project.
    - Ensure that the OkHttp library is added to your project dependencies.
+
+      # Download
+
+* Step 1. Add it in your root build.gradle at the end of repositories:
+```java
+    allprojects {
+        repositories {
+          ...
+          maven { url 'https://jitpack.io' }
+        }
+    }
+```
+* Step 2. Add the dependency
+```java
+   dependencies {
+    implementation 'com.github.YasuTeachSol:GoogleScriptTranslator:1.0'
+    implementation 'com.squareup.okhttp3:okhttp:5.0.0-alpha.11'
+	}
+```
 
 2. **Permissions:**
    - Add the internet permission to your `AndroidManifest.xml` file:
@@ -66,3 +68,4 @@ dependencyResolutionManagement {
            });
        }
    }
+
