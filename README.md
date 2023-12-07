@@ -1,4 +1,3 @@
-User
 # GoogleScriptTranslator Android Library
 
 This Android library allows you to easily integrate Google Apps Script for text translation in your Android applications. It uses OkHttp for making HTTP requests and provides a convenient interface for handling translation callbacks.
