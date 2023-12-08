@@ -10,22 +10,22 @@ This Android library allows you to easily integrate Google Apps Script for text 
 
       # Download
 
-* Step 1. Add it in your root build.gradle at the end of repositories:
-```java
-    allprojects {
-        repositories {
-          ...
-          maven { url 'https://jitpack.io' }
-        }
-    }
-```
-* Step 2. Add the dependency
-```java
-   dependencies {
-    implementation 'com.github.YasuTeachSol:GoogleScriptTranslator:1.0'
-    implementation 'com.squareup.okhttp3:okhttp:5.0.0-alpha.11'
-	}
-```
+   * Step 1. Add it in your root build.gradle at the end of repositories:
+     ```groovy
+     allprojects {
+         repositories {
+             ...
+             maven { url 'https://jitpack.io' }
+         }
+     }
+     ```
+   * Step 2. Add the dependency
+     ```groovy
+     dependencies {
+         implementation 'com.github.YasuTeachSol:GoogleScriptTranslator:1.0'
+         implementation 'com.squareup.okhttp3:okhttp:4.9.0' // Use the latest stable version of OkHttp
+     }
+     ```
 
 2. **Permissions:**
    - Add the internet permission to your `AndroidManifest.xml` file:
@@ -67,4 +67,3 @@ This Android library allows you to easily integrate Google Apps Script for text 
            });
        }
    }
-
